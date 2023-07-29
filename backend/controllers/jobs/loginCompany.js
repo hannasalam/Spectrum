@@ -11,7 +11,10 @@ const loginCompany = async (req,res) =>{
         }
         const user = await Company.findOne({email});
         
-        if(user && (await bcrypt.compare(password,user.password)) && user.isApproved){
+        if(user && (await bcrypt.compare(password,user.password))){
+            if(user.isApproved===false){
+                return res.status(400).json({message: 'Company not approved yet'});
+            }
             const token = jwt.sign({user_id:user._id,email},process.env.JWT_SECRET,{expiresIn:"2h"})
             user._doc.token =token+" company";
             console.log(token);
