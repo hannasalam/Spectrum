@@ -63,7 +63,7 @@ const Login = () => {
           window.location.href = "/JobDashboard";
         }
          else if (loginType === "admin") {
-          localStorage.setItem("token", data);
+          // localStorage.setItem("token", data);
           window.location.href = "/admin";
           console.log(data.token)
         }

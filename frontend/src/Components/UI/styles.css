@@ -1,5 +1,6 @@
    .box {
     width: 70px;
-    height: 70px;
+    height:50px;
     background: var(--accent);
+    border-radius: 20px;
   }
