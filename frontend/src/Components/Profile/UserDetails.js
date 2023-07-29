@@ -123,6 +123,11 @@ const UserDetails = (props) => {
       <div className='user__Bio'>
         {userDetails.bio}
       </div>
+      <Link to='/'>
+        <div className='logout__wrapper'>
+            <button className='logout__button' onClick={logoutHandler}>Logout</button>
+        </div>
+        </Link>
       <div className='user_details'>
         <h3>User Details</h3>
         {!isEditing && <button className='edit__button' onClick={editEnableHandler}>Edit Profile</button>}
@@ -146,6 +151,7 @@ const UserDetails = (props) => {
             Sexual Orientation<div className='user__SexualOrientation'>{userDetails.sexualPreference ? userDetails.sexualPreference : "nil"}</div>
         </div>}
         <div className='details__wrapper'>
+        
             <button className='change__button' onClick={passwordChangeEnableHandler}>Change Password</button>
             {isPasswordChanging && <form className='form_control'>
                 <div className='newFormControls'>
@@ -158,11 +164,7 @@ const UserDetails = (props) => {
                 </div>
             </form>}
         </div>
-        <Link to='/'>
-        <div className='logout__wrapper'>
-            <button className='logout__button' onClick={logoutHandler}>Logout</button>
-        </div>
-        </Link>
+        
       </div>
       
     </div>
