@@ -18,8 +18,10 @@
 
 .signup_logo{
     margin-top: 2%;
-    height: 5%;
-    width: 12%;
+    height: 60px;
+    width: 25%;
+    margin-bottom: 2%;
+    border-radius: 30px;
 }
 
 .input_data{
