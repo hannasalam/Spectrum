@@ -54,16 +54,18 @@ const JobListing = (props) => {
           <div className="details" key={job._id} id={job._id}>
             <div className="title">{job.title}</div>
             <div className="font_size">
-              <div className="company">{job.company}</div>
-              {job.jobDesc}
+              <div className="company">Company: {job.company}</div>
+              Description: {job.jobDesc}
               <div>{job.location}</div>
               <span>
                 <div className="amount">
-                  ${job.amount} {job.jobType}
+                  Job Type: {job.jobType}
                 </div>
               </span>
             </div>
-            <div>{job.prerequisite}</div>
+            <p>
+                <b>PreRequisites: </b> {job.prerequisite.join(', ')}
+              </p>
             <div className="date">
               {new Date(job.dateOfPosting).toLocaleDateString(undefined, {
                 month: "long",

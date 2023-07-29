@@ -1,0 +1,153 @@
+#root {
+    height: 100%;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus,
+  button:focus {
+    outline: none;
+  }
+  .properties-container {
+     background-color: rgb(181, 222, 191); 
+     margin:2px;
+     border-radius: 15px;
+    color: #000000;
+  }
+  .featured-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categories1-container {
+    margin-bottom:30px;
+  }
+  
+  .tab-title-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .property-hero-title {
+    position: absolute;
+    left: 15px;
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 400px) {
+    .property-hero-title {
+      position: relative;
+      padding-left: 20px;
+    }
+  }
+  
+  .tab-title {
+    margin-left: 10px;
+    list-style: none;
+  }
+  
+  .tab-title:focus {
+    outline: none;
+  }
+  
+  .houseactive {
+    /* background: #abce51; */
+    color: #551a8b;
+    border-radius: 10px;
+    text-decoration: underline;
+    /* border-color: #f5a623; */
+  }
+  
+  .houseactive:focus {
+    outline: none;
+  }
+  
+  .tab-title button {
+    color: #f4f3f4;
+    font-size: medium;
+    padding: 5px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  
+  .tab-title button:active {
+    transform: scale(1.5);
+  }
+  
+  .tab-title button:focus {
+    outline: none;
+  }
+  
+  .tab-title button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+  
+  @media (min-width: 1000px) {
+    .tab-title {
+      margin-left: 20px;
+    }
+    .categories-container {
+      margin-bottom: 100px;
+    }
+  }
+  
+
+  .house-search-box {
+    border: 1px solid #ccc;
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .house-search-box input[type="text"] {
+    font-size: inherit;
+    width: 250px;
+    height: 38px;
+    padding: 4px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .house-search-box input[type="text"]:focus {
+    outline: none;
+    width: 450px;
+  }
+  
+  .property-hero-title {
+    text-align: center;
+  }
+  .property-hero-title h2{
+    color:#030203;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;  
+    font-variant: small-caps
+  }
+  .property-hero-title span {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 9s linear infinite;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }

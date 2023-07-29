@@ -17,13 +17,15 @@ const JobItems = (props) => {
           <div className='title'>{props.title}</div>
           <div className='font_size'>
             <div className='company'>{props.company}</div>
-            {props.jobDesc}
+            Description: {props.jobDesc}
             <div>{props.location}</div>
             <span>
-              <div className='amount'>${props.amount} {props.jobType}</div>
+              <div className='amount'>Job Type: {props.jobType}</div>
             </span>
           </div>
-          <div>{props.prerequisite}</div>
+          <div><p>
+                <b>PreRequisites:</b> {props.prerequisite.join(', ')}
+              </p></div>
           <div className='date'>{new Date(props.dateOfPosting).toLocaleDateString(undefined, {
             month: "long",
             day: "numeric",
