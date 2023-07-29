@@ -5,6 +5,7 @@ import Articles from "./Articles/Articles";
 import Apartments from "./Apartments/Apartments";
 import NewArticle from "./Articles/NewArticle";
 import { Link } from "react-router-dom";
+import JobListing from "./Jobs/JobListing";
 
 const dummy_jobs = [
   {
@@ -110,7 +111,7 @@ const Home = () => {
     <div>
       <div className="left_bar">
         <h3>Trending Jobs</h3>
-        {enteredJobs.map((job) => (
+        {/* {enteredJobs.map((job) => (
           <JobItems
             key={job.id}
             title={job.title}
@@ -123,7 +124,8 @@ const Home = () => {
             skills={job.skills}
             date={job.date}
           />
-        ))}
+        ))} */}
+        <JobListing />
       </div>
 
       <div className="middle_bar">
