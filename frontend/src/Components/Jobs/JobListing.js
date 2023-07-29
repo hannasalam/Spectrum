@@ -54,7 +54,7 @@ const JobListing = (props) => {
           <div className="details" key={job._id} id={job._id}>
             <div className="title">{job.title}</div>
             <div className="font_size">
-              <div className="company">Company: {job.company}</div>
+              <div className="company">Company: {job.postedBy.name}</div>
               Description: {job.jobDesc}
               <div>{job.location}</div>
               <span>

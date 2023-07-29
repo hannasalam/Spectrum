@@ -1,6 +1,5 @@
 import React from 'react';
 import './JobDetails.css';
-import JobDate from './JobDate';
 
 const JobDetails = (props) => {
   const handleClose = () => {

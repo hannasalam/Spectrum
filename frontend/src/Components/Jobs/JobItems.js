@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './JobItems.css';
-import JobDate from './JobDate';
 
 const JobItems = (props) => {
-  const [isJobDetails, setIsJobDetails] = useState(false);
+  // const [isJobDetails, setIsJobDetails] = useState(false);
 
   const startReadmore = () => {
-    setIsJobDetails(true);
+    // setIsJobDetails(true);
     props.onSeeMore(props.id);
   };
 
@@ -16,7 +15,7 @@ const JobItems = (props) => {
         <div className='details'>
           <div className='title'>{props.title}</div>
           <div className='font_size'>
-            <div className='company'>{props.company}</div>
+            <div className='company'>Company:{props.postedBy}</div>
             Description: {props.jobDesc}
             <div>{props.location}</div>
             <span>

@@ -101,6 +101,7 @@ const Jobs = (props) => {
               jobDesc={job.jobDesc}
               location={job.location}
               jobType={job.jobType}
+              postedBy= {job.postedBy.name}
               prerequisite={job.prerequisite}
               responsibility={job.responsibility}
               misc={job.misc}
@@ -123,6 +124,7 @@ const Jobs = (props) => {
                 jobDesc={job.jobDesc}
                 location={job.location}
                 jobType={job.jobType}
+                postedBy= {job.postedBy.name}
                 prerequisite={job.prerequisite}
                 responsibility={job.responsibility}
                 misc={job.misc}
