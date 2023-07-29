@@ -60,7 +60,8 @@ const Jobs = (props) => {
     jobFetchHandler();
   }, []);
 
-  const filteredJobs = enteredJobs.filter((job) => {
+  const 
+  filteredJobs = enteredJobs.filter((job) => {
     const jobTitle = job.title.toLowerCase();
     const jobLocation = job.location.toLowerCase();
     const titleFilterValue = titleFilter.toLowerCase();
