@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './UserDetails.css'
 import UserDetailsEdit from './UserDetailsEdit';
+import { Link } from 'react-router-dom';
 
 const UserDetails = (props) => {
     const [userDetails, setUserDetails] = useState({});
@@ -106,6 +107,10 @@ const UserDetails = (props) => {
         fetchUserDetails();
       }, []);
 
+      const logoutHandler = () =>{
+        localStorage.removeItem('token');
+      };
+
   return (
     <div className='user__Details'>
       <div>
@@ -153,6 +158,11 @@ const UserDetails = (props) => {
                 </div>
             </form>}
         </div>
+        <Link to='/'>
+        <div className='logout__wrapper'>
+            <button className='logout__button' onClick={logoutHandler}>Logout</button>
+        </div>
+        </Link>
       </div>
       
     </div>
