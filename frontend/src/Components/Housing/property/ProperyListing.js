@@ -96,7 +96,6 @@ function PropertyListing() {
           </TabPanel>
         </Tabs>
       </div>
-      <Button />
     </div>
   );
 }
