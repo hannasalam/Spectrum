@@ -171,15 +171,17 @@ const Articles = (props) => {
                     ×
                   </span>
                   <div className="blog_details_title">{props.title}</div>
-                  <img
+                  {props.image && (
+                    <img
                     src={props.image}
                     alt="hi"
                     className="blog_details_img"
                   ></img>
+                  )}
                   <p className="blog_details_blog">{props.article}</p>
                   <div className="blog_detailsauthor">{props.author} </div>
                   {/* <div className="likes">Likes: {props.likes}</div> */}
-                  {props.likes}
+                  {props.likes +" "}
                   <button className="likebutton" onClick={handleLike}>
                     {liked ? (
                       <i className="fas fa-thumbs-down"></i>
