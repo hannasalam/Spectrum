@@ -74,29 +74,29 @@ const Admin = () => {
     }
   };
 
-  const fetchReportedContent = async (content) => {
-    try {
-      const response = await fetch(
-        `${process.env.REACT_APP_API}/admin/reportedContent/${content}`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-      if (response.ok) {
-        const data = await response.json();
-        console.log(data);
-        setReported(data);
-      } else {
-        console.error("Error fetching reported content");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
+  // const fetchReportedContent = async (content) => {
+  //   try {
+  //     const response = await fetch(
+  //       `${process.env.REACT_APP_API}/admin/reportedContent/${content}`,
+  //       {
+  //         method: "GET",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //           Authorization: `Bearer ${token}`,
+  //         },
+  //       }
+  //     );
+  //     if (response.ok) {
+  //       const data = await response.json();
+  //       console.log(data);
+  //       setReported(data);
+  //     } else {
+  //       console.error("Error fetching reported content");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //   }
+  // };
 
 
   const rejectCompanyHandler = async (companyId) => {
@@ -126,7 +126,7 @@ const Admin = () => {
 
   useEffect(() => {
     fetchPendingCompanyApproval();
-    fetchReportedContent();
+    // fetchReportedContent();
   }, []);
 
 

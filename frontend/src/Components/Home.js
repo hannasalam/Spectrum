@@ -1,52 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import JobItems from "./Jobs/JobItems";
 import Articles from "./Articles/Articles";
 import Apartments from "./Apartments/Apartments";
 import NewArticle from "./Articles/NewArticle";
-import { Link } from "react-router-dom";
-
-const dummy_jobs = [
-  {
-    id: "e1",
-    title: "Registrar Assistant",
-    company: "New York University",
-    rating: "4.2",
-    mode: "hybrid",
-    location: "New York",
-    amount: 94.12,
-    timing: "full-time",
-    skills:
-      "Advanced level skills with computers and business/productivity software (MS Office, Google Suite), word processing and .......",
-    date: new Date(2020, 7, 14),
-  },
-  {
-    id: "e2",
-    title: "Registrar Assistant",
-    company: "New York University",
-    rating: "4.2",
-    mode: "hybrid",
-    location: "New York",
-    amount: 94.12,
-    timing: "full-time",
-    skills:
-      "Advanced level skills with computers and business/productivity software (MS Office, Google Suite), word processing and .......",
-    date: new Date(2020, 7, 14),
-  },
-  {
-    id: "e3",
-    title: "Registrar Assistant",
-    company: "New York University",
-    rating: "4.2",
-    mode: "hybrid",
-    location: "New York",
-    amount: 94.12,
-    timing: "full-time",
-    skills:
-      "Advanced level skills with computers and business/productivity software (MS Office, Google Suite), word processing and .......",
-    date: new Date(2020, 7, 14),
-  },
-];
+import JobListing from "./Jobs/JobListing";
+import PropertyListing from "./Housing/property/ProperyListing";
 
 const Home = () => {
   const apartments = [
@@ -104,26 +62,12 @@ const Home = () => {
     setArticles((prevArticles) => [article, ...prevArticles]);
   };
 
-  const [enteredJobs, setEnteredJobs] = useState(dummy_jobs);
 
   return (
     <div>
       <div className="left_bar">
         <h3>Trending Jobs</h3>
-        {enteredJobs.map((job) => (
-          <JobItems
-            key={job.id}
-            title={job.title}
-            company={job.company}
-            rating={job.rating}
-            mode={job.mode}
-            location={job.location}
-            amount={job.amount}
-            timing={job.timing}
-            skills={job.skills}
-            date={job.date}
-          />
-        ))}
+        <JobListing />
       </div>
 
       <div className="middle_bar">
@@ -177,7 +121,7 @@ const Home = () => {
 
       <div className="right_bar">
         <h3>Apartments Nearby</h3>
-        <Apartments
+        {/* <Apartments
           image={apartments[0].image}
           title={apartments[0].title}
           location={apartments[0].location}
@@ -194,7 +138,8 @@ const Home = () => {
           facility={apartments[0].facility}
           details={apartments[0].details}
           date={apartments[0].date}
-        />
+        /> */}
+        <PropertyListing />
       </div>
     </div>
   );

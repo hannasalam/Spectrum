@@ -26,6 +26,9 @@ const JobDashBoard = () => {
     <div>
       <div className='jobs_posted'>
         <h3>Jobs Posted</h3>
+
+        
+        
         {jobs.map((job) => (
             <div key={job.id}>
             <div>{job.title}</div>

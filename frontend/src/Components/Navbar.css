@@ -23,7 +23,8 @@
   }
 
   .logo_image{
-    width: 8%;
+    width: 10%;
+    height: 60px;
     margin-left: -5%;
     border-radius: 10px;
   }
@@ -39,22 +40,21 @@
     display: inline;
     margin-left: 20px;
     padding: 2px;
-    /* text-decoration: none; */
-    color: rgb(0, 0, 0) !important; /* Change the color to black with !important */
   }
   
   .navbar_list li a {
     text-decoration: none;
-    /* color: inherit !important; */
   }
   
   .navbar_list li a:hover{
-    color: rgb(214, 11, 11);
-    text-decoration: underline;
+    color: rgb(129, 214, 11);
   }
   .navbar_list li a:active {
-    color: rgb(214, 11, 11);
-    text-decoration: underline;
+    color: rgb(45, 214, 11);
+  }
+
+  .active{
+    color: rgb(47, 174, 22);
   }
   
   .hamburger-menu {

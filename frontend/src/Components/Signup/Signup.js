@@ -93,13 +93,13 @@ const Signup = () => {
   return (
     <div className="background_user">
       <div className="form_bg">
-        <div className="login_box">
+        {/* <div className="login_box">
           <MyComponent />
-        </div>
+        </div> */}
         <form className="form_control" onSubmit={signupSubmitHandler}>
           <div>
             <img
-              src="./images/prof.png"
+              src="./images/Logo.png"
               alt="signup_logo"
               className="signup_logo"
             ></img>

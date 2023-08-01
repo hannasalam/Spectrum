@@ -10,8 +10,6 @@ import Jobs from "./Components/Jobs/Jobs";
 import ArticleDetails from "./Components/Articles/ArticleDetails";
 import JobDashBoard from "./Components/JobAdmin/JobDashBoard";
 import Admin from "./Components/Admin/Admin";
-//import Housing from './Components/Housing/pages/Home';
-//import Details from './Components/Housing/pages/Details';
 import Housing from "./Components/Housing/property/Property";
 import Details from "./Components/Housing/propertyDetails/PropertyDetails";
 import Profile from "./Components/Profile/Profile";

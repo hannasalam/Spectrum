@@ -90,8 +90,15 @@ const Company_Signup = () => {
   return (
     <div className="Job_signup">
       <div className="Job_signup_container">
-        <MyComponent />
+        {/* <MyComponent /> */}
         <form className="Job_signup_form" onSubmit={companySignupHandler}>
+        <div>
+            <img
+              src="./images/Logo.png"
+              alt="signup_logo"
+              className="signup_logo"
+            ></img>
+          </div>
           <div className="form_columns">
             <div className="form_column">
               <div className="company_name">

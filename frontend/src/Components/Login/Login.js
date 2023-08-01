@@ -63,7 +63,7 @@ const Login = () => {
           window.location.href = "/JobDashboard";
         }
          else if (loginType === "admin") {
-          localStorage.setItem("token", data);
+          // localStorage.setItem("token", data);
           window.location.href = "/admin";
           console.log(data.token)
         }
@@ -80,13 +80,13 @@ const Login = () => {
   return (
     <div className="background_users">
       <div className="login_form">
-        <div className="login_box">
+        {/* <div className="login_box">
           <MyComponent />
-        </div>
+        </div> */}
         <form onSubmit={(event) => logInSubmitHandler(event, loginType)}>
           <div>
             <img
-              src="./images/prof.png"
+              src="./images/Logo.png"
               alt="login_logo"
               className="login_logo"
             ></img>

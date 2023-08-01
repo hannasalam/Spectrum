@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { GiHamburgerMenu} from "react-icons/gi";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -15,6 +16,9 @@ const Navbar = () => {
             setShowNavbar(false);
         }
     }
+    const logoutHandler = () =>{
+        localStorage.removeItem('token');
+      };
 
     return(
         <div>
@@ -47,6 +51,12 @@ const Navbar = () => {
                 <li><NavLink to="/profile" className={({isActive}) => 
                     isActive ? 'active':undefined
                 }>Profile</NavLink></li>
+                
+                <li>
+                <Link to='/'>
+            <a className='logout__button' onClick={logoutHandler}>Logout</a>
+        </Link>
+                </li>
             
             </ul>
             </div>
