@@ -34,6 +34,7 @@ const Home = () => {
 
   const addArticleHandler = (article) => {
     setArticles((prevArticles) => [article, ...prevArticles]);
+    fetchArticles();
   };
 
 
@@ -95,24 +96,6 @@ const Home = () => {
 
       <div className="right_bar">
         <h3>Apartments Nearby</h3>
-        {/* <Apartments
-          image={apartments[0].image}
-          title={apartments[0].title}
-          location={apartments[0].location}
-          rent={apartments[0].rent}
-          facility={apartments[0].facility}
-          details={apartments[0].details}
-          date={apartments[0].date}
-        />
-        <Apartments
-          image={apartments[0].image}
-          title={apartments[0].title}
-          location={apartments[0].location}
-          rent={apartments[0].rent}
-          facility={apartments[0].facility}
-          details={apartments[0].details}
-          date={apartments[0].date}
-        /> */}
         <PropertyListing />
       </div>
     </div>

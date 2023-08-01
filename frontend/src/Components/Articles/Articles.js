@@ -124,6 +124,7 @@ const Articles = (props) => {
         // Comment added successfully
         console.log("Added comment" + response.json());
         setComments([...comments, comment]);
+        fetchComments();
       } else {
         // Handle error case
         console.error("Error adding comment");
