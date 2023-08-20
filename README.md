@@ -308,8 +308,8 @@ Thanks go to these wonderful people:
       </td>
       <td align="center" valign="top" width="25%">
         <a href="https://github.com/jaison080">
-          <img src="https://github.com/jaison080.png" width="100px;" alt="Jaison Thomas"/><br />
-          <sub><b>Jaison Thomas</b></sub>
+          <img src="https://github.com/jaison080.png" width="100px;" alt="Jaison Dennis"/><br />
+          <sub><b>Jaison Dennis</b></sub>
         </a><br />
         <a href="https://github.com/jaison080" title="GitHub Profile">
          <img src="https://user-images.githubusercontent.com/74038190/235224431-e8c8c12e-6826-47f1-89fb-2ddad83b3abf.gif" width="85">
